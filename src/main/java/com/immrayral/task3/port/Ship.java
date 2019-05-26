@@ -14,25 +14,28 @@ public class Ship extends Thread{
     private double cargo;
     private final double capacity = 100.0; //new Random().nextInt(5000)*1.0;
     private final ReentrantLock lock = new ReentrantLock();
+    private Storage storage;
 
-    public Ship(int shipID, BlockingQueue<Ship> shipsQueue, List<Dock> docks, double cargo) {
+    public Ship(int shipID, BlockingQueue<Ship> shipsQueue, List<Dock> docks, double cargo, Storage storage) {
         this.shipID = shipID;
         this.shipsQueue = shipsQueue;
         this.docks = docks;
         this.cargo = cargo;
+        this.storage = storage;
     }
 
     public double getCargo() {
-        this.lock.lock();
+        if (this.lock.tryLock())
         try {
             return this.cargo;
         } finally {
             this.lock.unlock();
         }
+        return  this.cargo;
     }
 
     public void setCargo(double cargo) {
-        this.lock.lock();
+        if (this.lock.tryLock())
         try {
             this.cargo = cargo;
         } finally {
@@ -82,45 +85,39 @@ public class Ship extends Thread{
     @Override
     public void run() {
         Boolean isOn = false;
-        for (Dock dock: docks) {
-            if(dock.isFree()){
-                this.lock.lock();
+        while (!isOn) {
+
+
+            this.lock.lock();
                 try {
-                    dock.setCurrentShip(this);
-                    dock.setShipsQueue(this.shipsQueue);
 
-                    System.out.println("setCurr to DOCK - " + dock.dockID + " ship - " + shipID);
-                    //    dock.notify();
-                    isOn = true;
-                }
-                finally {
+                        storage.addShip(this);
 
-                    this.lock.unlock();
-                }
-            }
-        }
-        if (cargo==0) {return;}
-        if (!isOn) {
 
-            try {
-                shipsQueue.offer(this);
-                this.lock.lock();
-                if (cargo==0) {
-                    System.out.println("Ship #" + shipID + " has 0 cargo");
-                    shipsQueue.remove(this);
-                    return;
-                }
-                   /* this.wait(3000 + new Random().nextInt(3000));
+
+                  /*
                     if (cargo>0) {
                         shipsQueue.remove(this);
                         System.out.println("Ship #" + shipID + " going away with out shipment");
+                        isOn = true;
+                        this.lock.unlock();
+                        return;
                     }*/
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                this.lock.unlock();
-            }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    if (this.lock.tryLock())
+                        this.lock.unlock();
+                }
+
 
         }
+
+            System.out.println("Ship #" + shipID + " has " +  cargo + " cargo");
+
+
     }
+
+
 }
