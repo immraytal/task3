@@ -11,6 +11,7 @@ public class Dock extends Thread {
     private Ship currentShip;
     private int counter;
     private Storage storage = new Storage();
+    private final ReentrantLock lock = new ReentrantLock();
 
     public Dock(BlockingQueue<Ship> shipsQueue, int dockNum, int counter) {
         super();
@@ -29,6 +30,10 @@ public class Dock extends Thread {
         return currentShip;
     }
 
+    public void setShipsQueue(BlockingQueue<Ship> shipsQueue) {
+        this.shipsQueue = shipsQueue;
+    }
+
     public void setCurrentShip(Ship currentShip) {
         this.currentShip = currentShip;
     }
@@ -36,19 +41,33 @@ public class Dock extends Thread {
     private boolean canWork() {
         return counter>0;
     }
+    public ReentrantLock getLock() {
+        return this.lock;
+    }
 
     @Override
     public void run() {
-        ReentrantLock lock = new ReentrantLock();
         while(canWork()) {
-            if (currentShip!=null && currentShip.getCargo()>0) {
-                System.out.println("NOT NULL - SHIP" + currentShip.getShipID());
+
+            if (currentShip!=null) {
                 lock.lock();
+                System.out.println("NOT NULL DOCK-" + dockID + " SHIP-" + currentShip.getShipID());
+
+                if(currentShip.getCargo()==0)
+                {
+                    currentShip = null;
+                    if (this.lock.tryLock())
+                        this.lock.unlock();
+                    continue;
+                }
+
                 free=false;
                 try {
                     if (storage.tryTransfer(currentShip)) {
                         counter--;
                         System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + "transfer cargo to storage");
+                        System.out.println("Current capacity - " + storage.capacity);//!!!!!!!!!!!!! storage public
+                        currentShip = shipsQueue.poll();
                     } else {
 
                         Iterator<Ship> ships = shipsQueue.iterator();
@@ -58,9 +77,10 @@ public class Dock extends Thread {
                             if (someShip.tryAddCargo(currentShip.getCargo())) {
                                 System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + "transfer cargo to ship" + someShip.getShipID());
                                 flag = true;
+                                counter--;
+                                currentShip = shipsQueue.poll();
                                 break;
                             }
-
                         }
                         if (!flag) {
                             System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + " can't transfer to anywhere cargo");
@@ -68,8 +88,12 @@ public class Dock extends Thread {
 
                     }
                 } finally {
-                    lock.unlock();
+                    if (this.lock.tryLock())
+                        this.lock.unlock();
                 }
+            } else
+            {
+                currentShip = shipsQueue.poll();
             }
 //
 //            else {

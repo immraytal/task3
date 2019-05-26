@@ -15,8 +15,9 @@ public class Port {
             Port port = new Port();
             int dockCount = 0;
             port.docks = new ArrayList<Dock>();
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 1; i++) {
                 Dock dock = new Dock(port.shipsQueue, ++dockCount, 10);
+                dock.setName("DOCK-" +dockCount);
                 System.out.printf("DOCK - %d started\n", dockCount);
                 port.docks.add(dock);
                 dock.start();
@@ -26,8 +27,17 @@ public class Port {
 
             for (int k=0;k<5;k++) {
                 Ship ship = new Ship(count++, port.shipsQueue, port.docks, 10.0);//new Random().nextInt(1000));
+                ship.setName("Ship-" + count);
                 ship.start();
             }
+            Thread.sleep(500);
+
+
+       /* for (Dock dock:
+             port.docks) {
+            dock.interrupt();
+            System.out.printf("DOCK - %d stopped\n", dock.dockID);
+        }*/
 
 
     }

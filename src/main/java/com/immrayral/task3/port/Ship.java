@@ -13,6 +13,7 @@ public class Ship extends Thread{
     private List<Dock> docks;
     private double cargo;
     private final double capacity = 100.0; //new Random().nextInt(5000)*1.0;
+    private final ReentrantLock lock = new ReentrantLock();
 
     public Ship(int shipID, BlockingQueue<Ship> shipsQueue, List<Dock> docks, double cargo) {
         this.shipID = shipID;
@@ -22,12 +23,29 @@ public class Ship extends Thread{
     }
 
     public double getCargo() {
-        return cargo;
+        this.lock.lock();
+        try {
+            return this.cargo;
+        } finally {
+            this.lock.unlock();
+        }
+    }
+
+    public void setCargo(double cargo) {
+        this.lock.lock();
+        try {
+            this.cargo = cargo;
+        } finally {
+            this.lock.unlock();
+        }
+    }
+
+    public ReentrantLock getLock() {
+        return this.lock;
     }
 
     public boolean tryAddCargo(double cargo) {
-        ReentrantLock lock = new ReentrantLock();
-        lock.lock();
+        this.lock.lock();
         try {
             boolean flag;
             if (cargo + this.cargo > capacity) {
@@ -46,15 +64,11 @@ public class Ship extends Thread{
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            lock.unlock();
+            this.lock.unlock();
         }
         return false;
     }
 
-
-    public void setCargo(double cargo) {
-        this.cargo = cargo;
-    }
 
     public int getShipID() {
         return shipID;
@@ -68,19 +82,20 @@ public class Ship extends Thread{
     @Override
     public void run() {
         Boolean isOn = false;
-        ReentrantLock lock = new ReentrantLock();
         for (Dock dock: docks) {
-            if(dock.isFree())
-                lock.lock();
-            {
+            if(dock.isFree()){
+                this.lock.lock();
                 try {
                     dock.setCurrentShip(this);
+                    dock.setShipsQueue(this.shipsQueue);
+
                     System.out.println("setCurr to DOCK - " + dock.dockID + " ship - " + shipID);
                     //    dock.notify();
                     isOn = true;
                 }
                 finally {
-                    lock.unlock();
+
+                    this.lock.unlock();
                 }
             }
         }
@@ -88,17 +103,22 @@ public class Ship extends Thread{
         if (!isOn) {
 
             try {
-                shipsQueue.offer(this, 2, TimeUnit.SECONDS);
-                lock.lock();
-                    this.wait(3000 + new Random().nextInt(3000));
+                shipsQueue.offer(this);
+                this.lock.lock();
+                if (cargo==0) {
+                    System.out.println("Ship #" + shipID + " has 0 cargo");
+                    shipsQueue.remove(this);
+                    return;
+                }
+                   /* this.wait(3000 + new Random().nextInt(3000));
                     if (cargo>0) {
                         shipsQueue.remove(this);
                         System.out.println("Ship #" + shipID + " going away with out shipment");
-                    }
-            } catch (InterruptedException e) {
+                    }*/
+            } catch (Exception e) {
                 e.printStackTrace();
             } finally {
-                lock.unlock();
+                this.lock.unlock();
             }
 
         }
