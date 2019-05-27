@@ -84,14 +84,21 @@ public class Ship extends Thread{
 
     @Override
     public void run() {
-        Boolean isOn = false;
-        while (!isOn) {
+        while (this.isAlive()) {
 
 
-            this.lock.lock();
+            //this.lock.lock();
                 try {
 
-                        storage.addShip(this);
+                        if (cargo>0)
+                        {
+                            //this.lock.lock();
+                            storage.addShip(this);
+                           // this.lock.unlock();
+
+                        } else {
+                            this.interrupt();
+                        }
 
 
 
@@ -107,8 +114,8 @@ public class Ship extends Thread{
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    if (this.lock.tryLock())
-                        this.lock.unlock();
+                   if (this.lock.tryLock())
+                       this.lock.unlock();
                 }
 
 

@@ -56,19 +56,24 @@ public class Dock extends Thread {
                 try {
 
                 free=false;
-                System.out.println("NOT NULL DOCK-" + dockID + " SHIP-" + currentShip.getShipID());
+
 
                 if(currentShip.getCargo()==0)
                 {
+                    currentShip.interrupt();
                     currentShip = null;
                     if (this.lock.tryLock())
-                        this.lock.unlock();
-                    continue;
-                }
+                        try {
 
+                            continue;
+                        } finally {
+                            this.lock.unlock();
+                        }
+                }
+                    System.out.println("NOT NULL DOCK-" + dockID + " SHIP-" + currentShip.getShipID());
                     if (storage.tryTransfer(currentShip)) {
                         counter--;
-                        System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + "transfer cargo to storage");
+                        System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + " transfer cargo to storage");
                         System.out.println("Current capacity - " + storage.capacity);//!!!!!!!!!!!!! storage public
                         free = true;
                     } /*else {
@@ -97,8 +102,12 @@ public class Dock extends Thread {
                 }
             } else
             {
-                free=true;
-                currentShip = storage.getShip();
+
+                     free = true;
+
+                     currentShip = storage.getShip();
+
+
 
             }
 //

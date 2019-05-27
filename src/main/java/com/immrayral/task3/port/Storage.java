@@ -9,14 +9,29 @@ public class Storage {
     public double capacity=0;
     private final double maxCapacity = 100.0;//new Random().nextInt(10000)*1.0;
     private BlockingQueue<Ship> shipsQueue = new LinkedBlockingQueue<Ship>();
+
+    public ReentrantLock getLock() {
+        return lock;
+    }
+
     private final ReentrantLock lock = new ReentrantLock();
 
 
     public Ship getShip() {
-        return shipsQueue.poll();
+         if (this.lock.tryLock()) {
+             try {
+                 return shipsQueue.poll();
+             }finally {
+                 this.lock.unlock();
+             }
+
+         }
+         return null;
     }
 
     public void addShip(Ship ship){
+
+        if(!shipsQueue.contains(ship))
         shipsQueue.offer(ship);
     }
 
@@ -32,7 +47,7 @@ public class Storage {
 
 
         this.lock.lock();
-        ship.getLock().lock();
+        //ship.lock();
 
         try {
 
@@ -46,7 +61,7 @@ public class Storage {
                 ship.setCargo(0);
 
             this.lock.unlock();
-            ship.getLock().unlock();
+           // ship.getLock().unlock();
             return true;
 
         } catch (Exception e) {
@@ -55,9 +70,9 @@ public class Storage {
             if (this.lock.tryLock()) {
                 this.lock.unlock();
             }
-            if (ship.getLock().tryLock()) {
-                ship.getLock().unlock();
-            }
+//            if (ship.getLock().tryLock()) {
+//                ship.getLock().unlock();
+//            }
         }
 
         return false;
