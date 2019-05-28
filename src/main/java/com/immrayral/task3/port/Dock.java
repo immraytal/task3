@@ -47,8 +47,7 @@ public class Dock extends Thread {
 
     @Override
     public void run() {
-
-
+    boolean worked = false;
         while(canWork()) {
 
             if (currentShip!=null) {
@@ -56,7 +55,7 @@ public class Dock extends Thread {
                 try {
 
                 free=false;
-
+                worked = true;
 
                 if(currentShip.getCargo()==0)
                 {
@@ -76,9 +75,9 @@ public class Dock extends Thread {
                         System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + " transfer cargo to storage");
                         System.out.println("Current capacity - " + storage.capacity);//!!!!!!!!!!!!! storage public
                         free = true;
-                    } /*else {
+                    } else {
 
-                        Iterator<Ship> ships = shipsQueue.iterator();
+                        Iterator<Ship> ships = storage.getIterator();
                         Boolean flag = false;
                         while (ships.hasNext()) {
                             Ship someShip = ships.next();
@@ -87,15 +86,16 @@ public class Dock extends Thread {
                                 flag = true;
                                 counter--;
                                 free = true;
-                                currentShip = shipsQueue.poll();
+                                currentShip = storage.getShip();
                                 break;
                             }
                         }
                         if (!flag) {
                             System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + " can't transfer to anywhere cargo");
+                            currentShip=null;
                         }
 
-                    }*/
+                    }
                 } finally {
                     if (this.lock.tryLock())
                         this.lock.unlock();
@@ -107,6 +107,15 @@ public class Dock extends Thread {
 
                      currentShip = storage.getShip();
 
+                     if (currentShip == null && worked) {
+                         try {
+                           this.interrupt();
+                           return;
+                         }
+                         catch (Exception e) {
+                             e.printStackTrace();
+                         }
+                     }
 
 
             }

@@ -1,5 +1,6 @@
 package com.immrayral.task3.port;
 
+import java.util.Iterator;
 import java.util.concurrent.BlockingQueue;
 
 import java.util.concurrent.LinkedBlockingQueue;
@@ -29,8 +30,20 @@ public class Storage {
          return null;
     }
 
-    public void addShip(Ship ship){
+    public Iterator<Ship> getIterator(){
+        if (this.lock.tryLock()) {
+            try {
+                return shipsQueue.iterator();
+            }finally {
+                this.lock.unlock();
+            }
 
+        }
+        return null;
+    }
+
+
+    public void addShip(Ship ship){
         if(!shipsQueue.contains(ship))
         shipsQueue.offer(ship);
     }
@@ -38,6 +51,8 @@ public class Storage {
     public void removeShip(Ship ship){
         shipsQueue.remove(ship);
     }
+
+
 
     public boolean tryTransfer(Ship ship) {
         if (capacity==100)

@@ -84,7 +84,7 @@ public class Ship extends Thread{
 
     @Override
     public void run() {
-        while (this.isAlive()) {
+      //  while (this.isAlive()) {
 
 
             //this.lock.lock();
@@ -113,13 +113,14 @@ public class Ship extends Thread{
 
                 } catch (Exception e) {
                     e.printStackTrace();
-                } finally {
-                   if (this.lock.tryLock())
-                       this.lock.unlock();
                 }
+//                } finally {
+//                   if (this.lock.tryLock())
+//                       this.lock.unlock();
+//                }
 
 
-        }
+       // }
 
             System.out.println("Ship #" + shipID + " has " +  cargo + " cargo");
 
