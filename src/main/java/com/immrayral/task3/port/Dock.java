@@ -71,7 +71,7 @@ public class Dock extends Thread {
                     if (storage.tryTransfer(currentShip)) {
                         counter--;
                         LOG.info("DOCK - " + dockID + ": SHIP - " + currentShip.getShipID() + " transfer cargo to storage");
-                        LOG.info("Current capacity - " + storage.capacity);//!!!!!!!!!!!!! storage public
+                        LOG.info("Current capacity - " + storage.getCapacity());//!!!!!!!!!!!!! storage public
                         free = true;
                     } else {
                         while (ships==null) {
@@ -110,7 +110,7 @@ public class Dock extends Thread {
                            return;
                          }
                          catch (Exception e) {
-                             e.printStackTrace();
+                             LOG.error(e.getMessage());
                          }
                      }
             }

@@ -9,6 +9,7 @@ public class Dispatcher {
 
     private BlockingQueue<Ship> shipsQueue = new LinkedBlockingQueue<Ship>();
 
+
     public ReentrantLock getLock() {
         return lock;
     }

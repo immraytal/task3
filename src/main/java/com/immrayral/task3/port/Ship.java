@@ -1,5 +1,7 @@
 package com.immrayral.task3.port;
 
+import org.apache.log4j.Logger;
+
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Ship extends Thread{
@@ -10,6 +12,8 @@ public class Ship extends Thread{
     private final ReentrantLock lock = new ReentrantLock();
     private Storage storage;
     private Dispatcher dispatcher;
+    private final Logger LOG = Logger.getLogger(Ship.class);
+
 
     public Ship(int shipID, double cargo, double maxCapacity, Storage storage, Dispatcher dispatcher ) {
         this.shipID = shipID;
@@ -58,7 +62,7 @@ public class Ship extends Thread{
             }
             return flag;
         } catch (Exception e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         } finally {
             this.lock.unlock();
         }
@@ -85,7 +89,7 @@ public class Ship extends Thread{
                             this.interrupt();
                         }
                 } catch (Exception e) {
-                    e.printStackTrace();
+                    LOG.error(e.getMessage());
                 }
     }
 }

@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Storage {
-    public double capacity;
+    private double capacity;
     private double maxCapacity;
     private final Logger LOG = Logger.getLogger(Storage.class);
 
@@ -13,6 +13,9 @@ public class Storage {
         return lock;
     }
 
+    public double getCapacity() {
+        return capacity;
+    }
     private final ReentrantLock lock = new ReentrantLock();
 
     public Storage(double capacity, double maxCapacity) {
@@ -37,7 +40,7 @@ public class Storage {
                 this.lock.unlock();
                 return true;
         } catch (Exception e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         } finally {
             if (this.lock.tryLock()) {
                 this.lock.unlock();

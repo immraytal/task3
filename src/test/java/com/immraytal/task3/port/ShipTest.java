@@ -8,11 +8,25 @@ import org.junit.Test;
 
 public class ShipTest {
 
-    public Ship ship = new Ship(1 , 10.0, 100.0 , new Storage(0.0, 100.0), new Dispatcher());
+    Ship ship = new Ship(1 , 10.0, 100.0 , new Storage(0.0, 100.0), new Dispatcher());
 
     @Test
     public void getCargoTest() {
-        Assert.assertNotEquals(11.0, ship.getCargo());
+        Assert.assertEquals(10.0, ship.getCargo(), 0.0);
+    }
+
+    @Test
+    public void setCargoTest() {
+        ship.setCargo(11.0);
+        Assert.assertEquals(11.0, ship.getCargo(), 0.0);
+    }
+
+    @Test
+    public void tryAddCargoTest() {
+        if (ship.tryAddCargo(10.0))
+        {
+            Assert.assertEquals(20.0, ship.getCargo(), 0.0);
+        }
     }
 
 
