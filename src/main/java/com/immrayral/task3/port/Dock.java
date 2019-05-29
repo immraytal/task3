@@ -1,26 +1,30 @@
 package com.immrayral.task3.port;
 
+import org.apache.log4j.Logger;
+
 import java.util.Iterator;
-import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class Dock extends Thread {
     public int dockID;
     private boolean free = true;
-    private BlockingQueue<Ship> shipsQueue;
     private Ship currentShip;
     private int counter;
-    private Storage storage = new Storage();
+    private Storage storage;
     private final ReentrantLock lock = new ReentrantLock();
+    private Dispatcher dispatcher;
+    private final Logger LOG = Logger.getLogger(Dock.class);
 
-    public Dock(BlockingQueue<Ship> shipsQueue, int dockNum, int counter) {
+    public Dock(int dockNum, int counter, Storage storage, Dispatcher dispatcher ) {
         super();
         this.dockID = dockNum;
-        this.shipsQueue = shipsQueue;
         this.counter = counter;
+        this.storage = storage;
+        this.dispatcher = dispatcher;
     }
 
     public boolean isFree() {return free;}
+
 
     public void setCounter(int counter) {
         this.counter = counter;
@@ -28,10 +32,6 @@ public class Dock extends Thread {
 
     public Ship getCurrentShip() {
         return currentShip;
-    }
-
-    public void setShipsQueue(BlockingQueue<Ship> shipsQueue) {
-        this.shipsQueue = shipsQueue;
     }
 
     public void setCurrentShip(Ship currentShip) {
@@ -47,43 +47,51 @@ public class Dock extends Thread {
 
     @Override
     public void run() {
+    boolean worked = false;
+        Iterator<Ship> ships=dispatcher.getIterator();
         while(canWork()) {
-
             if (currentShip!=null) {
                 lock.lock();
-                System.out.println("NOT NULL DOCK-" + dockID + " SHIP-" + currentShip.getShipID());
-
+                try {
+                free=false;
+                worked = true;
                 if(currentShip.getCargo()==0)
                 {
+                    currentShip.interrupt();
                     currentShip = null;
                     if (this.lock.tryLock())
-                        this.lock.unlock();
-                    continue;
+                        try {
+                            continue;
+                        } finally {
+                            this.lock.unlock();
+                        }
                 }
-
-                free=false;
-                try {
+                    System.out.println();
+                LOG.info("DOCK - " + dockID + ": SHIP - " + currentShip.getShipID() + " has arrived");
                     if (storage.tryTransfer(currentShip)) {
                         counter--;
-                        System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + "transfer cargo to storage");
-                        System.out.println("Current capacity - " + storage.capacity);//!!!!!!!!!!!!! storage public
-                        currentShip = shipsQueue.poll();
+                        LOG.info("DOCK - " + dockID + ": SHIP - " + currentShip.getShipID() + " transfer cargo to storage");
+                        LOG.info("Current capacity - " + storage.getCapacity());//!!!!!!!!!!!!! storage public
+                        free = true;
                     } else {
-
-                        Iterator<Ship> ships = shipsQueue.iterator();
+                        while (ships==null) {
+                            ships = dispatcher.getIterator();
+                        }
                         Boolean flag = false;
                         while (ships.hasNext()) {
                             Ship someShip = ships.next();
                             if (someShip.tryAddCargo(currentShip.getCargo())) {
-                                System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + "transfer cargo to ship" + someShip.getShipID());
+                                LOG.info("DOCK - " + dockID + ": SHIP - " + currentShip.getShipID() + " transfer cargo to ship" + someShip.getShipID());
                                 flag = true;
                                 counter--;
-                                currentShip = shipsQueue.poll();
+                                free = true;
+                                currentShip = dispatcher.getShip();
                                 break;
                             }
                         }
                         if (!flag) {
-                            System.out.println("DOCK - " + dockID + "  Ship " + currentShip.getShipID() + " can't transfer to anywhere cargo");
+                            LOG.info("DOCK - " + dockID + ": SHIP - " + currentShip.getShipID() + " can't transfer to anywhere cargo");
+                            currentShip=null;
                         }
 
                     }
@@ -93,20 +101,19 @@ public class Dock extends Thread {
                 }
             } else
             {
-                currentShip = shipsQueue.poll();
+                     free = true;
+                     currentShip = dispatcher.getShip();
+                     if (currentShip == null && worked) {
+                         try {
+                           this.interrupt();
+                           LOG.info(this.getName() + " thread has been interrupt");
+                           return;
+                         }
+                         catch (Exception e) {
+                             LOG.error(e.getMessage());
+                         }
+                     }
             }
-//
-//            else {
-//                try {
-//                    lock.lock();
-//                        free = true;
-//                        wait();
-//                        lock.unlock();
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//            }
-
         }
     }
 }

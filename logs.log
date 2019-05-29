@@ -1,0 +1,369 @@
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 2has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 3has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 1has arrived
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 1: SHIP - 3 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 2: SHIP - 2 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 3: SHIP - 1 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 4has arrived
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 1: SHIP - 4 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 40.0
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 5has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 7has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 6has arrived
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 1: SHIP - 7 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 2: SHIP - 5 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 3: SHIP - 6 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 8has arrived
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 1: SHIP - 8 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 80.0
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 9has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 12has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 10has arrived
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 1: SHIP - 12 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:73 - DOCK - 2: SHIP - 9 transfer cargo to storage
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 3: SHIP - 10transfer cargo to ship11
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 11has arrived
+2019-05-29 01:38:20 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 1: SHIP - 11transfer cargo to ship14
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 13has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 15has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 14has arrived
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 1: SHIP - 15transfer cargo to ship15
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 3: SHIP - 13transfer cargo to ship13
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 16has arrived
+2019-05-29 01:38:20 INFO  Dock:93 - DOCK - 2: SHIP - 14 can't transfer to anywhere cargo
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 1: SHIP - 16transfer cargo to ship16
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 17has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 19has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 18has arrived
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 1: SHIP - 19transfer cargo to ship18
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 3: SHIP - 17transfer cargo to ship16
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -1: SHIP - 21has arrived
+2019-05-29 01:38:20 INFO  Dock:93 - DOCK - 2: SHIP - 18 can't transfer to anywhere cargo
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 1: SHIP - 21transfer cargo to ship21
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 20has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 22has arrived
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 3: SHIP - 20transfer cargo to ship21
+2019-05-29 01:38:20 INFO  Dock:93 - DOCK - 2: SHIP - 22 can't transfer to anywhere cargo
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -3: SHIP - 25has arrived
+2019-05-29 01:38:20 INFO  Dock:70 - DOCK -2: SHIP - 24has arrived
+2019-05-29 01:38:20 INFO  Dock:84 - DOCK - 3: SHIP - 25transfer cargo to ship25
+2019-05-29 01:38:20 INFO  Dock:93 - DOCK - 2: SHIP - 24 can't transfer to anywhere cargo
+2019-05-29 01:38:20 INFO  Dock:109 - DOCK-3 thread has been interrupt
+2019-05-29 01:38:20 INFO  Dock:109 - DOCK-2 thread has been interrupt
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 4 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 2 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 3 has arrived
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 1: SHIP - 2 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 2: SHIP - 4 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 3: SHIP - 3 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 5 has arrived
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 1: SHIP - 5 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 40.0
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 6 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 1 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 7 has arrived
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 1: SHIP - 1 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 2: SHIP - 6 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 3: SHIP - 7 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 8 has arrived
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 1: SHIP - 8 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 80.0
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 9 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 11 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 10 has arrived
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 1: SHIP - 11 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:73 - DOCK - 2: SHIP - 9 transfer cargo to storage
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:39:20 INFO  Dock:93 - DOCK - 3: SHIP - 10 can't transfer to anywhere cargo
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 12 has arrived
+2019-05-29 01:39:20 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 1: SHIP - 12 transfer cargo to ship14
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 13 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 15 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 14 has arrived
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 1: SHIP - 15 transfer cargo to ship15
+2019-05-29 01:39:20 INFO  Dock:93 - DOCK - 3: SHIP - 13 can't transfer to anywhere cargo
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 16 has arrived
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 2: SHIP - 14 transfer cargo to ship16
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 1: SHIP - 16 transfer cargo to ship16
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 17 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 19 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 18 has arrived
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 1: SHIP - 19 transfer cargo to ship18
+2019-05-29 01:39:20 INFO  Dock:93 - DOCK - 3: SHIP - 17 can't transfer to anywhere cargo
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 1: SHIP - 20 has arrived
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 2: SHIP - 18 transfer cargo to ship17
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 1: SHIP - 20 transfer cargo to ship20
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 21 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 22 has arrived
+2019-05-29 01:39:20 INFO  Dock:93 - DOCK - 3: SHIP - 21 can't transfer to anywhere cargo
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 2: SHIP - 22 transfer cargo to ship20
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 3: SHIP - 24 has arrived
+2019-05-29 01:39:20 INFO  Dock:70 - DOCK - 2: SHIP - 25 has arrived
+2019-05-29 01:39:20 INFO  Dock:93 - DOCK - 3: SHIP - 24 can't transfer to anywhere cargo
+2019-05-29 01:39:20 INFO  Dock:84 - DOCK - 2: SHIP - 25 transfer cargo to ship24
+2019-05-29 01:39:20 INFO  Dock:109 - DOCK-3 thread has been interrupt
+2019-05-29 01:39:20 INFO  Dock:109 - DOCK-2 thread has been interrupt
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 1 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 3 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 4 has arrived
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 2: SHIP - 3 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 3: SHIP - 1 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 1: SHIP - 4 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 2 has arrived
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 1: SHIP - 2 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 8 has arrived
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 40.0
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 6 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 7 has arrived
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 2: SHIP - 8 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 1: SHIP - 7 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 3: SHIP - 6 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 10 has arrived
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 1: SHIP - 10 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 11 has arrived
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 80.0
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 5 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 12 has arrived
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 2: SHIP - 11 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Storage:35 - Storage is full!
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:42:27 INFO  Dock:73 - DOCK - 3: SHIP - 5 transfer cargo to storage
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 9 has arrived
+2019-05-29 01:42:27 INFO  Dock:93 - DOCK - 1: SHIP - 12 can't transfer to anywhere cargo
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 9 transfer cargo to ship13
+2019-05-29 01:42:27 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 14 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 13 has arrived
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 14 transfer cargo to ship14
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 15 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 16 has arrived
+2019-05-29 01:42:27 INFO  Dock:93 - DOCK - 1: SHIP - 13 can't transfer to anywhere cargo
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 16 transfer cargo to ship16
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 3: SHIP - 15 transfer cargo to ship17
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 18 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 17 has arrived
+2019-05-29 01:42:27 INFO  Dock:93 - DOCK - 1: SHIP - 17 can't transfer to anywhere cargo
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 18 transfer cargo to ship17
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 19 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 21 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 20 has arrived
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 21 transfer cargo to ship20
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 3: SHIP - 19 transfer cargo to ship18
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 22 has arrived
+2019-05-29 01:42:27 INFO  Dock:93 - DOCK - 1: SHIP - 20 can't transfer to anywhere cargo
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 22 transfer cargo to ship22
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 3: SHIP - 23 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 2: SHIP - 25 has arrived
+2019-05-29 01:42:27 INFO  Dock:70 - DOCK - 1: SHIP - 24 has arrived
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 2: SHIP - 25 transfer cargo to ship24
+2019-05-29 01:42:27 INFO  Dock:84 - DOCK - 3: SHIP - 23 transfer cargo to ship22
+2019-05-29 01:42:27 INFO  Dock:93 - DOCK - 1: SHIP - 24 can't transfer to anywhere cargo
+2019-05-29 01:42:27 INFO  Dock:109 - DOCK-3 thread has been interrupt
+2019-05-29 01:42:27 INFO  Dock:109 - DOCK-1 thread has been interrupt
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 3 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 2 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 1 has arrived
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 2: SHIP - 2 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 3: SHIP - 3 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 1: SHIP - 1 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 5 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 4 has arrived
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 2: SHIP - 5 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 6 has arrived
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 50.0
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 1: SHIP - 4 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 9 has arrived
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 3: SHIP - 6 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 2: SHIP - 9 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 60.0
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 8 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 7 has arrived
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 2: SHIP - 8 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 10 has arrived
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 90.0
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 1: SHIP - 7 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 12 has arrived
+2019-05-29 01:49:03 INFO  Storage:35 - Storage is full!
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 2: SHIP - 12 transfer cargo to ship11
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 11 has arrived
+2019-05-29 01:49:03 INFO  Dock:73 - DOCK - 3: SHIP - 10 transfer cargo to storage
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 11 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 13 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 14 has arrived
+2019-05-29 01:49:03 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 14 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 2: SHIP - 13 transfer cargo to ship13
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 16 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 15 has arrived
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 16 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 17 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 18 has arrived
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 3: SHIP - 15 transfer cargo to ship18
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 18 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 2: SHIP - 17 transfer cargo to ship15
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 19 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 20 has arrived
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 19 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 21 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 22 has arrived
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 3: SHIP - 20 transfer cargo to ship20
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 22 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 2: SHIP - 21 transfer cargo to ship20
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 1: SHIP - 24 has arrived
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 3: SHIP - 23 has arrived
+2019-05-29 01:49:03 INFO  Dock:93 - DOCK - 1: SHIP - 24 can't transfer to anywhere cargo
+2019-05-29 01:49:03 INFO  Dock:70 - DOCK - 2: SHIP - 25 has arrived
+2019-05-29 01:49:03 INFO  Dock:109 - DOCK-1 thread has been interrupt
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 3: SHIP - 23 transfer cargo to ship22
+2019-05-29 01:49:03 INFO  Dock:84 - DOCK - 2: SHIP - 25 transfer cargo to ship23
+2019-05-29 01:49:03 INFO  Dock:109 - DOCK-3 thread has been interrupt
+2019-05-29 01:49:03 INFO  Dock:109 - DOCK-2 thread has been interrupt
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 3 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 1 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 2 has arrived
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 1: SHIP - 1 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 3: SHIP - 3 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 2: SHIP - 2 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 5 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 4 has arrived
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 3: SHIP - 5 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 6 has arrived
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 50.0
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 2: SHIP - 4 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 7 has arrived
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 1: SHIP - 6 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 3: SHIP - 7 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 60.0
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 9 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 8 has arrived
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 3: SHIP - 9 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 10 has arrived
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 90.0
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 2: SHIP - 8 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 11 has arrived
+2019-05-29 01:56:11 INFO  Storage:35 - Storage is full!
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 11 transfer cargo to ship12
+2019-05-29 01:56:11 INFO  Dock:73 - DOCK - 1: SHIP - 10 transfer cargo to storage
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 13 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 12 has arrived
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 13 transfer cargo to ship13
+2019-05-29 01:56:11 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 14 has arrived
+2019-05-29 01:56:11 INFO  Dock:93 - DOCK - 2: SHIP - 12 can't transfer to anywhere cargo
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 14 transfer cargo to ship14
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 16 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 17 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 15 has arrived
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 17 transfer cargo to ship15
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 1: SHIP - 16 transfer cargo to ship18
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 18 has arrived
+2019-05-29 01:56:11 INFO  Dock:93 - DOCK - 2: SHIP - 15 can't transfer to anywhere cargo
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 18 transfer cargo to ship18
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 19 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 3: SHIP - 21 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 20 has arrived
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 3: SHIP - 21 transfer cargo to ship20
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 1: SHIP - 19 transfer cargo to ship19
+2019-05-29 01:56:11 INFO  Dock:93 - DOCK - 2: SHIP - 20 can't transfer to anywhere cargo
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 23 has arrived
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 2: SHIP - 25 has arrived
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 1: SHIP - 23 transfer cargo to ship22
+2019-05-29 01:56:11 INFO  Dock:93 - DOCK - 2: SHIP - 25 can't transfer to anywhere cargo
+2019-05-29 01:56:11 INFO  Dock:70 - DOCK - 1: SHIP - 24 has arrived
+2019-05-29 01:56:11 INFO  Dock:109 - DOCK-2 thread has been interrupt
+2019-05-29 01:56:11 INFO  Dock:84 - DOCK - 1: SHIP - 24 transfer cargo to ship24
+2019-05-29 01:56:11 INFO  Dock:109 - DOCK-1 thread has been interrupt
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 1 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 5 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 3 has arrived
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 1: SHIP - 5 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 2: SHIP - 1 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 3: SHIP - 3 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 30.0
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 7 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 6 has arrived
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 2: SHIP - 7 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 8 has arrived
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 50.0
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 1: SHIP - 6 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 9 has arrived
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 3: SHIP - 8 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 2: SHIP - 9 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 60.0
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 70.0
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 4 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 2 has arrived
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 2: SHIP - 4 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 10 has arrived
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 90.0
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 1: SHIP - 2 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 11 has arrived
+2019-05-29 11:33:43 INFO  Storage:38 - Storage is full!
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 11 transfer cargo to ship12
+2019-05-29 11:33:43 INFO  Dock:73 - DOCK - 3: SHIP - 10 transfer cargo to storage
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 13 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 12 has arrived
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 13 transfer cargo to ship13
+2019-05-29 11:33:43 INFO  Dock:74 - Current capacity - 100.0
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 14 has arrived
+2019-05-29 11:33:43 INFO  Dock:93 - DOCK - 1: SHIP - 12 can't transfer to anywhere cargo
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 14 transfer cargo to ship14
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 15 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 17 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 16 has arrived
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 17 transfer cargo to ship16
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 3: SHIP - 15 transfer cargo to ship18
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 18 has arrived
+2019-05-29 11:33:43 INFO  Dock:93 - DOCK - 1: SHIP - 16 can't transfer to anywhere cargo
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 18 transfer cargo to ship18
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 20 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 2: SHIP - 21 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 19 has arrived
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 2: SHIP - 21 transfer cargo to ship19
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 3: SHIP - 20 transfer cargo to ship20
+2019-05-29 11:33:43 INFO  Dock:93 - DOCK - 1: SHIP - 19 can't transfer to anywhere cargo
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 23 has arrived
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 1: SHIP - 24 has arrived
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 3: SHIP - 23 transfer cargo to ship22
+2019-05-29 11:33:43 INFO  Dock:93 - DOCK - 1: SHIP - 24 can't transfer to anywhere cargo
+2019-05-29 11:33:43 INFO  Dock:70 - DOCK - 3: SHIP - 25 has arrived
+2019-05-29 11:33:43 INFO  Dock:109 - DOCK-1 thread has been interrupt
+2019-05-29 11:33:43 INFO  Dock:84 - DOCK - 3: SHIP - 25 transfer cargo to ship25
+2019-05-29 11:33:43 INFO  Dock:109 - DOCK-3 thread has been interrupt
